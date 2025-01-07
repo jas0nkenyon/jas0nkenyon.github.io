@@ -1,0 +1,104 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://jason-kenyon.com/</id>
+  <title>Jason's Page</title>
+  <subtitle>Solutions to CTFs and articles regarding cybersecurity.</subtitle>
+  <updated>2025-01-06T19:15:52-05:00</updated>
+  <author>
+    <name>Jason Kenyon</name>
+    <uri>https://jason-kenyon.com/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://jason-kenyon.com/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://jason-kenyon.com/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
+  <rights> © 2025 Jason Kenyon </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>TryHackMe Daily Bugle</title>
+    <link href="https://jason-kenyon.com/posts/daily_bugle/" rel="alternate" type="text/html" title="TryHackMe Daily Bugle" />
+    <published>2025-01-03T00:00:00-05:00</published>
+  
+    <updated>2025-01-03T00:00:00-05:00</updated>
+  
+    <id>https://jason-kenyon.com/posts/daily_bugle/</id>
+    <content type="text/html" src="https://jason-kenyon.com/posts/daily_bugle/" />
+    <author>
+      <name>Jason Kenyon</name>
+    </author>
+
+  
+    
+    <category term="CTFs" />
+    
+  
+
+  <summary>Information Gathering
+We are instructed as follows:
+
+
+  Compromise a Joomla CMS account via SQLi, practise cracking hashes and escalate your privileges by taking advantage of yum.
+
+
+And we are given the target IP address 10.10.89.186.
+
+Our objectives are to
+
+
+  determine who robbed the bank,
+  identify the version of Joomla running on the web server,
+  obtain the user flag, and
+  obtain the roo...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>TryHackMe Skynet</title>
+    <link href="https://jason-kenyon.com/posts/skynet/" rel="alternate" type="text/html" title="TryHackMe Skynet" />
+    <published>2024-12-30T00:00:00-05:00</published>
+  
+    <updated>2024-12-30T00:00:00-05:00</updated>
+  
+    <id>https://jason-kenyon.com/posts/skynet/</id>
+    <content type="text/html" src="https://jason-kenyon.com/posts/skynet/" />
+    <author>
+      <name>Jason Kenyon</name>
+    </author>
+
+  
+    
+    <category term="CTFs" />
+    
+  
+
+  <summary>Information Gathering
+
+We are given:
+
+
+  Deploy and compromise the vulnerable machine!
+
+
+Additonally, we are given the target IP 10.10.13.83. Our objectives are as follows:
+
+
+  Obtain Miles’ email password,
+  Identify the hidden directory,
+  Recall the type of vulnerability wherein one includes a remote file for malicious purposes,
+  Obtain the user flag, and
+  Obtain the root flag.
+
+
+Enumerati...</summary>
+
+  </entry>
+
+</feed>
+
+
