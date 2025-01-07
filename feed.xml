@@ -4,7 +4,7 @@
   <id>https://jason-kenyon.com/</id>
   <title>Jason's Page</title>
   <subtitle>Solutions to CTFs and articles regarding cybersecurity.</subtitle>
-  <updated>2025-01-06T19:15:52-05:00</updated>
+  <updated>2025-01-06T19:44:24-05:00</updated>
   <author>
     <name>Jason Kenyon</name>
     <uri>https://jason-kenyon.com/</uri>
@@ -63,7 +63,7 @@ Our objectives are to
     <link href="https://jason-kenyon.com/posts/skynet/" rel="alternate" type="text/html" title="TryHackMe Skynet" />
     <published>2024-12-30T00:00:00-05:00</published>
   
-    <updated>2024-12-30T00:00:00-05:00</updated>
+    <updated>2025-01-06T19:38:18-05:00</updated>
   
     <id>https://jason-kenyon.com/posts/skynet/</id>
     <content type="text/html" src="https://jason-kenyon.com/posts/skynet/" />
