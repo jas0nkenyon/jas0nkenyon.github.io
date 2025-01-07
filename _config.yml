@@ -14,12 +14,21 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
+<<<<<<< HEAD
 title: Jason's Webpage# the main title
 
 tagline: CTF Writeups and articles # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   CTF Writeups and articles
+=======
+title: Jason's Page # the main title
+
+tagline: CTFs and Articles # it will display as the subtitle
+
+description: >- # used by seo meta and the atom feed
+  Solutions to CTFs and articles regarding cybersecurity.
+>>>>>>> ce10fb1ff2eafe0fdb13d527d6ca46249b1614c4
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -29,7 +38,11 @@ github:
   username: jas0nkenyon # change to your GitHub username
 
 twitter:
+<<<<<<< HEAD
   username: # change to your Twitter username
+=======
+  username: "" # change to your Twitter username
+>>>>>>> ce10fb1ff2eafe0fdb13d527d6ca46249b1614c4
 
 social:
   # Change to your full name.
@@ -39,10 +52,14 @@ social:
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your Twitter homepage
+<<<<<<< HEAD
     - https://github.com/jas0nkenyon# change to your GitHub homepage
+=======
+    - https://github.com/jas0nkenyon # change to your GitHub homepage
+>>>>>>> ce10fb1ff2eafe0fdb13d527d6ca46249b1614c4
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/jason-kenyon-8b063133b/
 
 # Site Verification Settings
 webmaster_verifications:
@@ -88,17 +105,28 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
+<<<<<<< HEAD
 theme_mode: dark # [light | dark]
+=======
+theme_mode: "dark" # [light | dark]
+>>>>>>> ce10fb1ff2eafe0fdb13d527d6ca46249b1614c4
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
+<<<<<<< HEAD
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
+=======
+cdn: # "https://chirpy-img.netlify.app"
+
+# the avatar on sidebar, support local or CORS resources
+avatar: "/assets/img/me.png"
+>>>>>>> ce10fb1ff2eafe0fdb13d527d6ca46249b1614c4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

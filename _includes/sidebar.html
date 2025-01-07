@@ -50,7 +50,7 @@
         <span class="icon-border"></span>
       {% endif %}
     {% endunless %}
-
+    {% comment %}
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github', 'twitter' %}
@@ -91,6 +91,10 @@
         </a>
       {% endif %}
     {% endfor %}
+    {% endcomment%}
+    <a href="mailto: jas0nkenyon@protonmail.com" class="fa fa-envelope"></a>
+    <a href="https://www.linkedin.com/in/jason-kenyon-8b063133b/" class="fa-brands fa-linkedin"></a>
+    <a href="https://github.com/jas0nkenyon" class="fa-brands fa-github"></a>
   </div>
   <!-- .sidebar-bottom -->
 </aside>
